@@ -18,10 +18,9 @@ const GoogleBooks = props => {
             <h4>{props.authors.join(", ")}</h4>
           </div>
           <div className="col text-right">
-            <button className="btn btn-primary">View</button>
-
+          <a href={props.link} className="btn btn-secondary" target="_blank">View</a>
             <Popup
-              trigger={<button className="btn btn-primary">Save</button>}
+              trigger={<button className="btn btn-success">Save</button>}
               onOpen={() => props.saveGoogleBook(book)}
               position="left bottom"
             >

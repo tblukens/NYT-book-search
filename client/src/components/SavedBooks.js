@@ -10,7 +10,7 @@ const SavedBook = props => {
             <h4>{props.authors}</h4>
           </div>
           <div className="col text-right">
-            <button className="btn btn-primary">View</button>
+            <a href={props.link} className="btn btn-secondary" target="_blank">View</a>
             <button
             className="btn btn-danger"
             onClick={() => props.deleteSavedBook(props._id)}
